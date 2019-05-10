@@ -31,17 +31,16 @@ body {
 }
 .village-title {
   font-family: 'Bubblegum Sans', cursive;
-  font-size: 2rem;
+  font-size: 4rem;
   color: white;
 }
 .Smurf {
-  /* border: 1px solid red; */
   width: 30%;
   margin-bottom: 1.2rem;
   min-width: 300px;
   font-size: 1.2rem;
   border-radius: 10px;
-  background: white;
+  background: rgba(255, 255, 255, 0.2); 
 }
 .smurf-name {
   /* border: 1px solid red; */
@@ -50,4 +49,60 @@ body {
   border-radius: 10px 10px 0 0;
   background: #394855;
   color: white;
+}
+.delete-button {
+  margin: 1rem 0;
+  width: 30%;
+  height: 2rem;
+  border: 1px solid white;
+  background: none;
+  border-radius: 5px;
+}
+.delete-button:hover {
+  cursor: pointer;
+  background: white;
+  color: #394855;
+}
+.SmurfForm {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  min-width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2); 
+}
+.smurf-form-title {
+  font-family: 'Bubblegum Sans', cursive;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.smurf-form-title h1 {
+  margin-top: 0;
+}
+.form-input {
+  height: 2rem;
+  width: 67%;
+  margin-bottom: 0.4rem;
+  padding-left: 0.7rem;
+}
+.form-button {
+  margin-top: 1rem;
+  width: 70%;
+  height: 2rem;
+  border: 1px solid white;
+  background: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.form-button:hover {
+  cursor: pointer;
+  background: white;
+  color: #394855;
 }
