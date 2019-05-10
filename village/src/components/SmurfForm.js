@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import axios from 'axios'
+import axios from "axios";
 
 class SmurfForm extends Component {
   constructor(props) {
@@ -27,7 +27,7 @@ class SmurfForm extends Component {
         this.setState({
           smurf: res.data
         });
-        this.props.history.push('/')
+        this.props.history.push("/");
       })
       .catch(err => {
         console.log(err);
@@ -48,18 +48,21 @@ class SmurfForm extends Component {
       <div className="SmurfForm">
         <form onSubmit={this.addSmurf}>
           <input
+            // required
             onChange={this.handleInputChange}
             placeholder="name"
             value={this.state.name}
             name="name"
           />
           <input
+            // required
             onChange={this.handleInputChange}
             placeholder="age"
             value={this.state.age}
             name="age"
           />
           <input
+            // required
             onChange={this.handleInputChange}
             placeholder="height"
             value={this.state.height}
