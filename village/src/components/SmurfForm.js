@@ -27,6 +27,7 @@ class SmurfForm extends Component {
         this.setState({
           smurf: res.data
         });
+        this.props.history.push('/')
       })
       .catch(err => {
         console.log(err);
